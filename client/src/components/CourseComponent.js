@@ -37,7 +37,7 @@ const CourseComponent = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/content");
+        const res = await axios.get("https://streaming-jobh.onrender.com/content");
         setCourse(res.data.courseContent);
       } catch (error) {
         console.error("Error fetching data", error);

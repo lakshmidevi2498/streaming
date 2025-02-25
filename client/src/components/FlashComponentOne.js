@@ -43,7 +43,7 @@ const FlashComponentOne = () => {
 
       try {
 
-        const res = await axios.get('http://localhost:5000/video-data')
+        const res = await axios.get('https://streaming-jobh.onrender.com/video-data')
      
         setAsset(res.data.videoData)
 
